@@ -10,13 +10,13 @@
           <div class="text-center">
             <img src="static/emark.png">
             <!-- <p>{{text}}</p> -->
-            <p>{{normalLanPack.confirmDelete[lanIndex]}}</p>
+            <p>{{msg}}</p>
           </div>
 	      </div>
 	      <div class="modal-footer">
           <div class="text-center">
-            <button class="btn btn-default" data-dismiss="modal" aria-hidden="true" @click="cancel">{{normalLanPack.cancel[lanIndex]}}</button>
-  	        <button class="btn btn-red" data-dismiss="modal" aria-hidden="true" @click="click">{{normalLanPack.confirm[lanIndex]}}</button>
+            <button class="btn btn-default" data-dismiss="modal" aria-hidden="true" @click="cancel">取消</button>
+  	        <button class="btn btn-red" data-dismiss="modal" aria-hidden="true" @click="click">确定</button>
           </div>
 	      </div>
 	    </div>
@@ -30,6 +30,7 @@
   import mixins from '@/global/mixins'
 	export default {
 		mixins: [mixins],
+    props:['msg']
     data: function(){
       return {
         title:'',
