@@ -60,18 +60,15 @@
   import mixins from '@/global/mixins'
   import avatarUpload from '@/components/AvatarUpload'
   export default{
-    props:['id'],
+    props:['id', 'user-info'],
     mixins: [mixins],
     components:{avatarUpload},
     data(){
       return{
-        userInfo:[],
+        // userInfo:[],
       }
     },
     created: function() {
-      var vm = this
-      vm.userInfo = vm.$store.state.userInfo
-      //解析cookie
     },
     methods:{
       //隐藏个人详细信息
