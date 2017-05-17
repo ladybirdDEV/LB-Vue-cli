@@ -3,7 +3,7 @@ import dateFormat from 'dateformat'
 import pinyin from 'han'
 //导入案例相关的语言包进行状态管理
 import serverConfig from '@/assets/js/serverConfig.js'
-import normalLanPack from '@/assets/js/languagePack/normalLanPack.js'
+// import normalLanPack from '@/assets/js/languagePack/normalLanPack.js'
 export default {
   data() {
       return {
@@ -17,7 +17,7 @@ export default {
       //将serverApi赋值
       vm.serverApi = serverConfig.serverApi
       //从vuex中拿到语言包
-      vm.normalLanPack = normalLanPack
+      // vm.normalLanPack = normalLanPack
     },
     //将vuex中的state通过mapState计算出来让组件直接使用
     computed: mapState({

@@ -30,7 +30,7 @@
   import mixins from '@/global/mixins'
 	export default {
 		mixins: [mixins],
-    props:['msg']
+    props:['msg'],
     data: function(){
       return {
         title:'',
