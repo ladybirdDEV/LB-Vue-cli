@@ -75,7 +75,7 @@
     "vue-tinymce": "^1.0.5",
     "vuex": "^2.3.1",
     "webpack": "^2.3.3",
-    "webpack-bundle-analyzer": "^2.2.1",
+    "webpack-bundle-analyzer": "^3.5.2",
     "webpack-dev-middleware": "^1.10.0",
     "webpack-hot-middleware": "^2.18.0",
     "webpack-merge": "^4.1.0"
